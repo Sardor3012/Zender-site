@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+/* header top start */
+.header_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 650px;
+
+    width: 100%;
+    height: 44px;
+    max-width: 1920px;
+    background-color: #f8f9f9;
+}
+.reg-log{
+    display: flex;
+    gap: 10px;
+}
+.contacts p {
+    font-size: 14px;
+}
+.reg-log p{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* header middle start */
+.header_middle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 101px;
+    max-width: 1920px;
+    background-color: transparent;
+    padding: 35px 0;
+}
+.logo{
+    position: absolute;
+    left: 180px;
+}
+.find{
+    position: absolute;
+    right: 280px;
+    display: flex;
+
+    width: 600px;
+    height: 51px;
+}
+.hover_category{
+    position: relative;
+}
+.hover_category .select_option {
+    border: 1px solid grey;
+    border-radius: 8px 0px 0px 8px;
+    background: inherit;
+    height: 50px;
+    line-height: 47px;
+    padding-left: 13px;
+    padding-right: 30px;
+    font-size: 14px;
+    min-width: 150px;
+}
+.search_box input {
+    border: 1px solid grey;
+    background: inherit;
+    width: 300px;
+    height: 50px;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 132px 0 20px;
+    opacity: 0.7;
+}
+.search_btn{
+    border: 0;
+    background: #0063d1;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 20px;
+    min-width: 120px;
+    height: 50px;
+    border-radius: 0 5px 5px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.search_btn:hover{
+    background-color: #242424;
+}
+.cart_wrapper{
+    position: absolute;
+    right: 200px;
+}
+.header_bottom{
+    display: flex;
+    width: 100%;
+    height: 56px;
+    background: #0063d1;
+}
+.all-categories{
+    display: flex;
+    gap: 90px;
+    background: #1953b4;
+    padding: 0 30px;
+    cursor: pointer;
+    width: 270px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 14px;
+    color: white;
+    margin-left: 175px;
+}
+.all-categories img{
+  width: 20px; 
+  height: 15px; 
+}
+.links{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.links a{
+    color: white;
+}
+.link-ease-in-out a {
+    display: inline-block;
+    color: white; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+.link-ease-in-out a:after {
+    background-color: white; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+    width: 100%;
+}
+
+  /* SCREEN ONE */
+
+  .screen-one{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-image img{
+    width: 270px;
+    height: 430px;
+  }
+
+  /* SLIDER */
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 870px;
+    max-height: 431px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* SCREEN TWO */
+  .screen-two{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 155px;
+  }
+  .sc2-images{
+    display: flex;
+    gap: 20px;
+  }
+
+
